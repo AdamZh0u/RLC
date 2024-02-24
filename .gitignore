@@ -10,6 +10,6 @@ __pycache__/
 
 .DS_Store
 data/
-
+.DS_Store
 More_Simple_Reinforcement_Learning
 DeepReinforcementLearningInAction/
