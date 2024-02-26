@@ -2,7 +2,7 @@
 # `docker build --network host -t deego/salepred:1.0 .`
 
 # debian 11 https://hub.docker.com/_/python shared tages 适用于arm和amd64
-FROM python:3.10.13-bullseye
+FROM python:3.9.18-bullseye
 
 # 设置工作目录和user
 WORKDIR /workspace
@@ -23,6 +23,8 @@ COPY requirements.txt .
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
+## assign kernel
+# RUN python -m ipykernel install --user --name py19 --display-name "Python 3.9"
 
 # docker run --network host --name salepred -v "%cd%:/workspace"  -it deego/salepred:1.0
 # --gpus all

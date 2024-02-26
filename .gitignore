@@ -11,5 +11,9 @@ __pycache__/
 .DS_Store
 
 data/
+models/
 More_Simple_Reinforcement_Learning
 DeepReinforcementLearningInAction/
+
+src/pwd.py
+.vscode/
